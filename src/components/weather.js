@@ -1,5 +1,3 @@
-const App = require("./app");
-
 function Weather() {
   return (
     <div>

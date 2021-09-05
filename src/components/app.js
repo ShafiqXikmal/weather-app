@@ -7,6 +7,8 @@ function App() {
   const [descriptionS, setDescription] = useState("");
   const [temperatue, setTemperatue] = useState("");
   const [location, setLocation] = useState("");
+  const [humidity, setHumidity] = useState("");
+  const [wind, setWind] = useState("");
 
   function getWeatherData() {
     let apiKey = "7dfe309afec3ee637c6130947b96f76b";
@@ -24,6 +26,8 @@ function App() {
         setDescription(data.weather[0].description);
         setTemperatue(data.main.temp);
         setLocation(data.name);
+        setHumidity(data.main.humidity);
+        setWind(data.wind.speed);
       })
       .catch(function (error) {
         console.log(error);
@@ -37,8 +41,9 @@ function App() {
   return (
     <>
       <div>
-        <h1> {location}</h1>
-        <h1>Weather </h1>
+        <h1>Weather App Project</h1>
+      </div>
+      <div>
         <div className="container">
           <form>
             <input
@@ -50,8 +55,10 @@ function App() {
           </form>
           <button onClick={getWeatherData}>Search</button>
         </div>
-        <h1> {descriptionS}</h1>
-        <h1> {temperatue}</h1>
+        <h1> Temperatue: {temperatue} °C</h1>
+        <h1> Description: {descriptionS}</h1>
+        <h1> Humidity: {humidity} % </h1>
+        <h1> Wind Speed: {wind} Km/H</h1>
       </div>
     </>
   );
