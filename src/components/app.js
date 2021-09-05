@@ -65,12 +65,26 @@ function App() {
         <button onClick={getWeatherData}>Search</button>
       </div>
 
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#242424",
+        }}
+      >
+        <h1> {descriptionS}</h1>
         <br />
-        <h3> {descriptionS}</h3>
-        <h2> {temperatue}</h2>
-
-        <br />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#242424",
+        }}
+      >
+        <h1> {temperatue}</h1>
       </div>
     </>
   );
