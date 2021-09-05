@@ -32,16 +32,29 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>Weather App Project</h1>
-      <form>
-        <input
-          type="text"
-          placeholder="Your Location"
-          value={location}
-          onChange={handleChange}
-        ></input>
-      </form>
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#242424",
+        }}
+      >
+        Weather App Project
+      </div>
+      <br />
+
+      <div>
+        <form>
+          <input
+            type="text"
+            placeholder="Your Location"
+            value={location}
+            onChange={handleChange}
+          ></input>
+        </form>
+      </div>
       <button onClick={getWeatherData}>Search</button>
       <div>
         <br />
@@ -50,7 +63,7 @@ function App() {
         <h1> {location}</h1>
         <br />
       </div>
-    </div>
+    </>
   );
 }
 
