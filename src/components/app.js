@@ -1,4 +1,7 @@
+const React = require("react");
 const { useState } = require("react");
+const Weather = require("./weather");
+const Style = require("./style.css");
 
 function App() {
   const [descriptionS, setDescription] = useState("");
@@ -33,61 +36,21 @@ function App() {
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "70px",
-          width: "100%",
-          backgroundColor: "#226ba3",
-          fontSize: "30px",
-          color: "#242424",
-        }}
-      >
+      <div>
         <h1> {location}</h1>
         <h1>Weather </h1>
-      </div>
-      <br />
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#242424",
-        }}
-      >
-        <form>
-          <input
-            type="text"
-            placeholder="Your Location"
-            value={location}
-            onChange={handleChange}
-          ></input>
-        </form>
-        <button onClick={getWeatherData}>Search</button>
-      </div>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#242424",
-        }}
-      >
+        <div className="container">
+          <form>
+            <input
+              type="text"
+              placeholder="Your Location"
+              value={location}
+              onChange={handleChange}
+            ></input>
+          </form>
+          <button onClick={getWeatherData}>Search</button>
+        </div>
         <h1> {descriptionS}</h1>
-        <br />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#242424",
-        }}
-      >
         <h1> {temperatue}</h1>
       </div>
     </>
