@@ -41,11 +41,19 @@ function App() {
           color: "#242424",
         }}
       >
-        Weather App Project
+        <h1> {location}</h1>
+        <h1>Weather </h1>
       </div>
       <br />
 
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#242424",
+        }}
+      >
         <form>
           <input
             type="text"
@@ -54,13 +62,14 @@ function App() {
             onChange={handleChange}
           ></input>
         </form>
+        <button onClick={getWeatherData}>Search</button>
       </div>
-      <button onClick={getWeatherData}>Search</button>
+
       <div>
         <br />
         <h3> {descriptionS}</h3>
         <h2> {temperatue}</h2>
-        <h1> {location}</h1>
+
         <br />
       </div>
     </>
