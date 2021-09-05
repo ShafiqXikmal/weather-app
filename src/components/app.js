@@ -38,6 +38,10 @@ function App() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          height: "70px",
+          width: "100%",
+          backgroundColor: "#226ba3",
+          fontSize: "30px",
           color: "#242424",
         }}
       >
