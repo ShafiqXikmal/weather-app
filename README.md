@@ -37,14 +37,14 @@ Function & method
 - using fetch & GET method to get the Api data from the servers
 
 # Technical hurdle
--css styling
--code format and naming of the file
+- css styling
+- code format and naming of the file
 
 # Things that enjoy!
--enjoy how you helping and teaching us about javascript jack!
--enjoy creating new project everyday and learn new ways to write the code
+- enjoy how you helping and teaching us about javascript jack!
+- enjoy creating new project everyday and learn new ways to write the code
 
 # What next
--learn new things, new framework and other
--would like to explore more about the javascript world
--learning css for now like is important for me.
+- learn new things, new framework and other
+- would like to explore more about the javascript world
+- learning css for now like is important for me.
