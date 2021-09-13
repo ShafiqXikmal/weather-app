@@ -48,3 +48,6 @@ Function & method
 - learn new things, new framework and other
 - would like to explore more about the javascript world
 - learning css for now like is important for me.
+
+#Thanks Jack!
+- Thank you so much for all the things that you give us jack! All the code are coded by myself, any feedback will be the best!
